@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_activity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_weather"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewWeatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_info_will_be_displayed_here"
+        android:layout_below="@id/buttonUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="389dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/textViewWeatherInfo"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
