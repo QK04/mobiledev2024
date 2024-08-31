@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+
 public class ForecastFragment extends Fragment {
     @SuppressLint("SetTextI18n")
     @Override
