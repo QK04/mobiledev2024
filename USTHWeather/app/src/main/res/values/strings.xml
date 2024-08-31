@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="weather_activity" />
+    <string name="update_weather" />
+    <string name="weather_info_will_be_displayed_here" />
+    <string name="hello_world">\n</string>
+</resources>
