@@ -56,3 +56,15 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy called");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
