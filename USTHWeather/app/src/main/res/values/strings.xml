@@ -4,4 +4,22 @@
     <string name="update_weather" />
     <string name="weather_info_will_be_displayed_here" />
     <string name="hello_world">\n</string>
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="weather_icon" />
+    <string name="_25_c">25°C</string>
+    <string name="usth_weather">USTH Weather</string>
+    <string name="usthweather">USTH Weather</string>
+    <string name="partly_cloudy">Partly Cloudy</string>
+    <string name="showers">Showers</string>
+    <string name="rain">Rain</string>
+    <string name="scattered_showers">Scattered Showers</string>
+    <string name="mostly_cloudy">Mostly Cloudy</string>
+    <string name="thunderstorms">Thunderstorms</string>
+    <string name="scattered_thunderstorms">Scattered Thunderstorms</string>
 </resources>
