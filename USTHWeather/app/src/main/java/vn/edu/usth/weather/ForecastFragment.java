@@ -28,6 +28,7 @@ public class ForecastFragment extends Fragment {
         textView.setTextSize(24);
         textView.setTextColor(Color.BLACK);
 
+        
         ImageView imageView = new ImageView(getContext());
         imageView.setImageResource(R.drawable.sun);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(
