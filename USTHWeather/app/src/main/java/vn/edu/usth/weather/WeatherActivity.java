@@ -18,6 +18,9 @@ public class WeatherActivity extends AppCompatActivity {
         HeaderFragment headerFragment = new HeaderFragment();
         fragmentTransaction.replace(R.id.fragment_container_header, headerFragment);
 
+        WeatherFragment weather_fragment = new WeatherFragment();
+        fragmentTransaction.replace(R.id.fragment_container_weather, weather_fragment);
+
         ForecastFragment forecastFragment = new ForecastFragment();
         fragmentTransaction.replace(R.id.fragment_container_forecast, forecastFragment);
 
