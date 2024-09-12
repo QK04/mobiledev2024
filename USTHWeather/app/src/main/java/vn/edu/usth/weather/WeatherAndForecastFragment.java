@@ -6,16 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+public class WeatherAndForecastFragment extends Fragment {
 
-public class ForecastFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    public ForecastFragment() {
+    public WeatherAndForecastFragment() {
     }
 
-    public static ForecastFragment newInstance(String param1, String param2) {
-        ForecastFragment fragment = new ForecastFragment();
+    public static WeatherAndForecastFragment newInstance(String param1, String param2) {
+        WeatherAndForecastFragment fragment = new WeatherAndForecastFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -31,9 +31,10 @@ public class ForecastFragment extends Fragment {
             String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_forecast, container, false);
+        return inflater.inflate(R.layout.fragment_weather_and_forecast, container, false);
     }
 }

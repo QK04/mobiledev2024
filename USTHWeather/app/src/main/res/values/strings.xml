@@ -34,4 +34,6 @@
     <string name="settings_icon" />
     <string name="_12c_cloudy">12C\nCloudy</string>
     <string name="paris">Paris</string>
+    <string name="tablayout">TabLayout</string>
+    <string name="viewpager">ViewPager</string>
 </resources>

@@ -2,39 +2,23 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        viewPager.setOffscreenPageLimit(3);
 
-        HeaderFragment headerFragment = new HeaderFragment();
-        fragmentTransaction.replace(R.id.fragment_container_header, headerFragment);
+        WeatherPagerAdapter weatherPagerAdapter = new WeatherPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(weatherPagerAdapter);
 
-        WeatherFragment weather_fragment = new WeatherFragment();
-        fragmentTransaction.replace(R.id.fragment_container_weather, weather_fragment);
-
-        ForecastFragment forecastFragment = new ForecastFragment();
-        fragmentTransaction.replace(R.id.fragment_container_forecast, forecastFragment);
-
-        fragmentTransaction.commit();
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
