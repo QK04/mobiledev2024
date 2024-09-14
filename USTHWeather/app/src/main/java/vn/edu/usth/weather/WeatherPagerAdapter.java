@@ -20,15 +20,15 @@ public class WeatherPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int page) {
         switch (page) {
-            case 0: return ForecastFragment.newInstance("","page # 1");
-            case 1: return WeatherFragment.newInstance("","page # 2");
-            case 2: return WeatherAndForecastFragment.newInstance("","page # 3");
+            case 0: return new ForecastFragment();
+            case 1: return new WeatherFragment();
+            case 2: return new WeatherAndForecastFragment();
         }
         return new ForecastFragment();
     }
     @Override
     public CharSequence getPageTitle(int page) {
-        final String[] titles = new String[] { "Hanoi", "Paris", "Toulouse" };
+        final String[] titles = new String[] { "Hanoi", "Berlin", "Toulouse" };
         return titles[page];
     }
 }
