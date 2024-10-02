@@ -10,13 +10,20 @@
         layout="@layout/toolbar">
     </include>
 
-    <fragment
-        android:id="@+id/fragment_container_weather"
-        android:name="vn.edu.usth.weather.WeatherAndForecastFragment"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:contentDescription="@string/tablayout"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:contentDescription="@string/viewpager"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_margin="10dp"
         tools:layout="@layout/fragment_weather_and_forecast">
-    </fragment>
+    </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>
