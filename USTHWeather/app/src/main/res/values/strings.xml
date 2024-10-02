@@ -36,4 +36,17 @@
     <string name="paris">Paris</string>
     <string name="tablayout">TabLayout</string>
     <string name="viewpager">ViewPager</string>
+    <string-array name="update_interval_entries">
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+
+    <string-array name="update_interval_values">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
 </resources>
